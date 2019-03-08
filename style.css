@@ -1,10 +1,10 @@
 body{
-	background-image: url("uno.gif");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  background-image: url("uno.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 200px;
-  margin: 100px;
+  margin: 250px;
 
 }
 
@@ -20,22 +20,17 @@ body{
   color: black;
   border-radius: 0 5px 5px 0;
 }
-
-.banner {
-	text-align: center;
+.logo{
+  float; border-top-right-radius: 
 }
-
 .img img{
 
   float: right;
   text-align: center;
-  padding-right: 200px;
   width: 800px;
   height: 250px;
-  padding-right: 50px;
-  padding-left: 35px;
-  padding-top: -5px;
-  margin: -100px;
+  padding-right: 90px;
+  margin: -250px;
   background: transparent;
   color: #fff;
 
@@ -46,27 +41,22 @@ body{
 }
 
 #home{
-	top: 100px;
-	background-color: skyblue;
+  top: 100px;
+  background-color: skyblue;
 }
 
 #about {
- 	top: 170px;
-  	background-color: #b3b3ff;
-}
-
-#blog {
-  	top: 240px;
-  	background-color: #ffb3ff;
+  top: 170px;
+    background-color: #b3b3ff;
 }
 
 #gallery {
-  	top: 310px;
-  	background-color: #ffffb3;
+    top: 240px;
+    background-color: #ffffb3;
 }
 
 #contact {
-  	top: 380px;
-  	background-color: #ccffb3;
+    top: 310px;
+    background-color: #ffb3ff;
 }
 

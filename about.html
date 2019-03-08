@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
-	</head>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 <style>
 body{
-	background-image: url("dos.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  background-image: url("dos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 200px;
-  margin: 100px;
-
+  margin: 250px;
 }
+
+.img img{
+
+  float: right;
+  text-align: center;
+  width: 800px;
+  height: 250px;
+  padding-right: 220px;
+  margin: -425px;
+  background: transparent;
+  color: #fff;
+
+ }
+
 #mySidenav a {
   position: absolute;
   left: -90px;
@@ -31,39 +46,73 @@ body{
 }
 
 #home{
-	top: 100px;
-	background-color: skyblue;
+  top: 100px;
+  background-color: skyblue;
 }
 
 #about {
- 	top: 170px;
-  	background-color: #b3b3ff;
-}
-
-#blog {
-  	top: 240px;
-  	background-color: #ffb3ff;
+  top: 170px;
+    background-color: #b3b3ff;
 }
 
 #gallery {
-  	top: 310px;
-  	background-color: #ffffb3;
+    top: 240px;
+    background-color: #ffffb3;
 }
 
 #contact {
-  	top: 380px;
-  	background-color: #ccffb3;
+    top: 310px;
+    background-color: #ffb3ff;
 }
+.btn {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  left: 400px;
+  top: 350px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.meet:hover {
+  border-color: solid black;
+  color: white;
+}
+
+.bttn {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  right: 400px;
+  top: 350px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.shop:hover {
+  border-color: solid black;
+  color: white;
+}
+
 
 </style>
 
-	<body>
-		<div id="mySidenav" class="sidenav">
-			<a href="home.html" id="home"><strong>Home</strong></a>
-			<a href="about.html" id="about"><strong>About</strong></a>
-  			<a href="blog.html" id="blog"><strong>Blog</strong></a>
-  			<a href="gallery.html" id="gallery"><strong>Gallery</strong></a>
-  			<a href="contacts.html" id="contact"><strong>Contacts</strong></a>
-		</div>
-	</body>
+  <body>
+    <a href="team.html" class="btn meet"><strong>MEET THE TEAM</strong></a>
+    <a href="history.html" class="bttn shop"><strong>History of the Botique</strong></a>
+    <div class="img"> <img src="12.png"> </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="home.html" id="home"><strong>Home</strong></a>
+      <a href="about.html" id="about"><strong>About</strong></a>
+      <a href="gallery.html" id="gallery"><strong>Gallery</strong></a>
+      <a href="contacts.html" id="contact"><strong>Contacts</strong></a>
+    </div>
+  </body>
 </html>

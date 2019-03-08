@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
-	</head>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  </head>
 <style>
 body{
-	background-image: url("singko.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  background-image: url("singko.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 200px;
-  margin: 100px;
+  margin: 250px;
 }
+
+.img img{
+
+  float: right;
+  text-align: center;
+  width: 800px;
+  height: 250px;
+  padding-right: 220px;
+  margin: -425px;
+  background: transparent;
+  color: #fff;
+}
+
 #mySidenav a {
   position: absolute;
   left: -90px;
@@ -30,38 +43,33 @@ body{
 }
 
 #home{
-	top: 100px;
-	background-color: skyblue;
+  top: 100px;
+  background-color: skyblue;
 }
 
 #about {
- 	top: 170px;
-  	background-color: #b3b3ff;
-}
-
-#blog {
-  	top: 240px;
-  	background-color: #ffb3ff;
+  top: 170px;
+    background-color: #b3b3ff;
 }
 
 #gallery {
-  	top: 310px;
-  	background-color: #ffffb3;
+    top: 240px;
+    background-color: #ffffb3;
 }
 
 #contact {
-  	top: 380px;
-  	background-color: #ccffb3;
+    top: 310px;
+    background-color: #ffb3ff;
 }
 
 </style>
-	<body>
-		<div id="mySidenav" class="sidenav">
+  <body>
+    <div class="img"> <img src="12.png"> </div>
+    <div id="mySidenav" class="sidenav">
       <a href="home.html" id="home"><strong>Home</strong></a>
       <a href="about.html" id="about"><strong>About</strong></a>
-        <a href="blog.html" id="blog"><strong>Blog</strong></a>
-        <a href="gallery.html" id="gallery"><strong>Gallery</strong></a>
-        <a href="contacts.html" id="contact"><strong>Contacts</strong></a>
+      <a href="gallery.html" id="gallery"><strong>Gallery</strong></a>
+      <a href="contacts.html" id="contact"><strong>Contacts</strong></a>
     </div>
-	</body>
+  </body>
 </html>
