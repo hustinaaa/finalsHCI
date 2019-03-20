@@ -15,20 +15,22 @@ body{
 
 }
 .img img{
-
   float: right;
   text-align: center;
   width: 800px;
   height: 250px;
-  padding-right: 220px;
-  margin: -425px;
+  padding: 10px;
+  margin: 25px;
   background: transparent;
   color: #fff;
+  position: absolute;
+  top: -20px;
+  left: 150px;
 }
 
 #mySidenav a {
   position: absolute;
-  left: -90px;
+  left: -80px;
   transition: 0.3s;
   padding: 15px;
   width: 100px;
@@ -62,6 +64,80 @@ body{
     top: 310px;
     background-color: #ffb3ff;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
 </style>
   <body>
     <div class="img"> <img src="12.png"> </div>
@@ -71,5 +147,231 @@ body{
       <a href="gallery.html" id="gallery"><strong>Gallery</strong></a>
       <a href="contacts.html" id="contact"><strong>Contacts</strong></a>
     </div>
+ <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('formal')"> Formal</button>
+  <button class="btn" onclick="filterSelection('casual')"> Casual</button>
+  <button class="btn" onclick="filterSelection('swimwear')"> Swim Wear</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column formal">
+    <div class="content">
+      <img src="a.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column formal">
+    <div class="content">
+    <img src="b.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column formal">
+    <div class="content">
+    <img src="c.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="d.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="e.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="f.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="g.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="h.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="i.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="j.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+   <div class="column formal">
+    <div class="content">
+      <img src="k.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="aa.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="bb.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="cc.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="dd.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="ee.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="ff.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="gg.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="hh.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="jj.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column casual">
+    <div class="content">
+      <img src="kk.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+      <img src="1a.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1b.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1c.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1d.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1e.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1f.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1g.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1h.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1i.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1j.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1k.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+  <div class="column swimwear">
+    <div class="content">
+    <img src="1l.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
   </body>
 </html>

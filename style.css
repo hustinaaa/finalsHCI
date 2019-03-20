@@ -29,10 +29,13 @@ body{
   text-align: center;
   width: 800px;
   height: 250px;
-  padding-right: 90px;
-  margin: -250px;
+  padding: 10px;
+  margin: 25px;
   background: transparent;
   color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 150px;
 
  }
 
