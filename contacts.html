@@ -119,6 +119,51 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+#contact form {
+   margin: 0;
+}
+
+#contact .icons {
+   margin-bottom: 1em;
+}
+
+#contact .column {
+  padding: 3.5em 0 1.5em 0;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  width: 50%;
+}
+
+#contact .column.social {
+  background: #e6e6e6;
+}
+
+@media screen and (max-width: 980px) {
+
+#contact .column {
+  padding: 2em 0 0.1em 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+
+#contact .column {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+#contact .column {
+  padding: 1em 0 0.1em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  }
+
+}
 </style>
   <body>
     <div class="img"> <img src="12.png"> </div>
@@ -160,5 +205,14 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
+<section id="contact">
+  <div class="social column">
+    <h3>Follow Us</h3>
+    <ul class="icons">
+    <li><a href="http://www.twitter.com/raeviel" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="http://www.Facebook.com/justhyneraeviel.miranda.7" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+    <li><a href="http://www.instagram.com/rhhhaeviel" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+   </div>
   </body>
 </html>

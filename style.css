@@ -34,7 +34,7 @@ body{
   background: transparent;
   color: #fff;
   position: absolute;
-  top: 130px;
+  top: 10px;
   left: 220px;
 
  }
@@ -61,5 +61,13 @@ body{
 #contact {
     top: 310px;
     background-color: #ffb3ff;
+}
+
+.header{
+  position: absolute;
+  top: 330px;
+  right: 420px;
+  font-family: 'Dancing Script', cursive;
+  color: #808080;
 }
 
