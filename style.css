@@ -4,13 +4,13 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   padding: 200px;
-  margin: 240px;
+  margin: 250px;
 
 }
 
 #mySidenav a {
   position: absolute;
-  left: -90px;
+  left: -110px;
   transition: 0.3s;
   padding: 15px;
   width: 100px;
@@ -34,8 +34,8 @@ body{
   background: transparent;
   color: #fff;
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 130px;
+  left: 220px;
 
  }
 
