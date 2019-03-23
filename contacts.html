@@ -65,105 +65,72 @@ body{
     background-color: #ffb3ff;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #ffb3ff;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color:  #6666ff;
-}
-
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 5px;
-}
-
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-#contact form {
-   margin: 0;
-}
-
-#contact .icons {
-   margin-bottom: 1em;
-}
-
-#contact .column {
-  padding: 3.5em 0 1.5em 0;
-  padding-left: 3.5em;
-  padding-right: 3.5em;
-  width: 50%;
-}
-
-#contact .column.social {
-  background: #e6e6e6;
-}
-
-@media screen and (max-width: 980px) {
-
-#contact .column {
-  padding: 2em 0 0.1em 0;
-  padding-left: 2em;
-  padding-right: 2em;
-  }
-}
-
-@media screen and (max-width: 736px) {
-
-#contact .column {
-  width: 100%;
-}
+div#main{
+width:830px;
+height:650px;
+margin:0 auto;
+font-family: 'Calligraffitti', cursive;
 
 }
-
-@media screen and (max-width: 480px) {
-
-#contact .column {
-  padding: 1em 0 0.1em 0;
-  padding-left: 1em;
-  padding-right: 1em;
-  }
-
+div#form_sample{
+text-align:center;
+border:1px solid #ccc;
+width:300px;
+padding:0 50px 15px;
+margin-top:20px;
+box-shadow:0 0 15px;
+border-radius:6px;
+float:left
 }
+
+#main h1{
+margin-top:40px
+}
+
+hr{
+margin-top:-5px
+}
+
+label{
+float:left;
+font-size:16px
+}
+
+input[type="text"]{
+width:100%;
+margin-top:10px;
+height:35px;
+margin-bottom:25px;
+padding:10px;
+border:3px solid #2BC1F2
+}
+
+textarea{
+width:100%;
+border:3px solid #2BC1F2;
+padding:10px;
+margin-bottom:25px;
+margin-top:10px;
+height:100px;
+resize:none
+}
+
+input[type="submit"]{
+width:100%;
+padding:10px 45px;
+background-color:#2BC1F2;
+border:none;
+color:#fff;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+font-family: 'Calligraffitti', cursive;
+}
+
+div#fugo{
+float:right
+}
+
 </style>
   <body>
     <div class="img"> <img src="12.png"> </div>
@@ -173,46 +140,68 @@ input[type=submit]:hover {
       <a href="gallery.html" id="gallery"><strong>Gallery</strong></a>
       <a href="contacts.html" id="contact"><strong>Contacts</strong></a>
     </div>
-   <div class="container">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <p>Swing by our shop, or leave us a message:</p>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="shop.jpg" style="width:100%">
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">Japan</option>
-          <option value="usa">Korea</option>
-          <option value="usa">Philippines</option>
-          <option value="usa">Portugal</option>
-          <option value="usa">USA</option>
-        </select>
-        <label for="subject">Suggestion</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="Submit" value="Submit">
-      </form>
-    </div>
-  </div>
+    <div id="main">
+<div id="form_sample"></div> 
+<script src="js/form.js"></script>
 </div>
-<section id="contact">
-  <div class="social column">
-    <h3>Follow Us</h3>
-    <ul class="icons">
-    <li><a href="http://www.twitter.com/raeviel" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-    <li><a href="http://www.Facebook.com/justhyneraeviel.miranda.7" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-    <li><a href="http://www.instagram.com/rhhhaeviel" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-    </ul>
-   </div>
-  </body>
+<script>
+  var x = document.getElementById("form_sample");
+var createform = document.createElement('form'); // Create New Element Form
+createform.setAttribute("action", ""); // Setting Action Attribute on Form
+createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+x.appendChild(createform);
+
+var heading = document.createElement('h2'); // Heading of Form
+heading.innerHTML = "Contact Form ";
+createform.appendChild(heading);
+
+var line = document.createElement('hr'); // Giving Horizontal Row After Heading
+createform.appendChild(line);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var namelabel = document.createElement('label'); // Create Label for Name Field
+namelabel.innerHTML = "Your Name : "; // Set Field Labels
+createform.appendChild(namelabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for Name
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("name", "dname");
+createform.appendChild(inputelement);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var emaillabel = document.createElement('label'); // Create Label for E-mail Field
+emaillabel.innerHTML = "Your Email : ";
+createform.appendChild(emaillabel);
+
+var emailelement = document.createElement('input'); // Create Input Field for E-mail
+emailelement.setAttribute("type", "text");
+emailelement.setAttribute("name", "demail");
+createform.appendChild(emailelement);
+
+var emailbreak = document.createElement('br');
+createform.appendChild(emailbreak);
+
+var messagelabel = document.createElement('label'); // Append Textarea
+messagelabel.innerHTML = <"Your Message : ";
+createform.appendChild(messagelabel);
+
+var texareaelement = document.createElement('textarea');
+texareaelement.setAttribute("name", "dmessage");
+createform.appendChild(texareaelement);
+
+var messagebreak = document.createElement('br');
+createform.appendChild(messagebreak);
+
+var submitelement = document.createElement('input'); // Append Submit Button
+submitelement.setAttribute("type", "submit");
+submitelement.setAttribute("name", "dsubmit");
+submitelement.setAttribute("value", "Submit");
+createform.appendChild(submitelement);
+
+</script>
+   </body>
 </html>
